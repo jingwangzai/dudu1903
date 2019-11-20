@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dudujwz/dudu-admin/dudu-admin.iml" filepath="$PROJECT_DIR$/dudujwz/dudu-admin/dudu-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dudujwz/dudu-common/dudu-common.iml" filepath="$PROJECT_DIR$/dudujwz/dudu-common/dudu-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dudujwz/dudu-mapper/dudu-mapper.iml" filepath="$PROJECT_DIR$/dudujwz/dudu-mapper/dudu-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dudujwz/dudu-pojo/dudu-pojo.iml" filepath="$PROJECT_DIR$/dudujwz/dudu-pojo/dudu-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dudujwz/dudu-service/dudu-service.iml" filepath="$PROJECT_DIR$/dudujwz/dudu-service/dudu-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dudujwz/dudu-weixin/dudu-weixin.iml" filepath="$PROJECT_DIR$/dudujwz/dudu-weixin/dudu-weixin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dudujwz/dudujwz.iml" filepath="$PROJECT_DIR$/dudujwz/dudujwz.iml" />
+    </modules>
+  </component>
+</project>
