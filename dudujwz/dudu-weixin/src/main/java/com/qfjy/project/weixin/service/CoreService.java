@@ -1,9 +1,12 @@
 package com.qfjy.project.weixin.service;
 
+import com.qfjy.project.weixin.api.tuling.TuLingUtil;
+import com.qfjy.project.weixin.api.tuling.bean.TuLingBean;
 import com.qfjy.project.weixin.bean.resp.Article;
 import com.qfjy.project.weixin.bean.resp.NewsMessage;
 import com.qfjy.project.weixin.bean.resp.TextMessage;
 import com.qfjy.project.weixin.util.MessageUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +17,8 @@ import java.util.Map;
 
 @Service
 public class CoreService {
-
+@Autowired
+private TuLingUtil tuLingUtil;
 
 	/**
 	 * 处理微信发来的请求
@@ -67,7 +71,8 @@ public class CoreService {
 
 			// 文本消息
 			if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
-				respContent = "您发送的是文本消息！";
+				String s = tuLingUtil.SendMessage(content);
+				respContent =s;
 			}
 			// 图片消息
 			else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_IMAGE)) {
