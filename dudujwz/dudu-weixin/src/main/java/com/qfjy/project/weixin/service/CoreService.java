@@ -1,7 +1,7 @@
 package com.qfjy.project.weixin.service;
 
+import com.qfjy.project.weixin.api.hitokoto.Hitokotoutil;
 import com.qfjy.project.weixin.api.tuling.TuLingUtil;
-import com.qfjy.project.weixin.api.tuling.bean.TuLingBean;
 import com.qfjy.project.weixin.bean.resp.Article;
 import com.qfjy.project.weixin.bean.resp.NewsMessage;
 import com.qfjy.project.weixin.bean.resp.TextMessage;
@@ -19,7 +19,8 @@ import java.util.Map;
 public class CoreService {
 @Autowired
 private TuLingUtil tuLingUtil;
-
+@Autowired
+private Hitokotoutil hitokotoutil;
 	/**
 	 * 处理微信发来的请求
 	 * 
@@ -112,6 +113,11 @@ private TuLingUtil tuLingUtil;
 						respContent = "菜单项被点击！";
 
 					}
+                    if (eventKey.equals("31")) {
+                        respContent = hitokotoutil.SendMessage();
+                        System.out.println(respContent);
+                    }
+
 					else if (eventKey.equals("70")) {
 
 						List<Article> articleList = new ArrayList<Article>();

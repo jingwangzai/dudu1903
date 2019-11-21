@@ -7,5 +7,5 @@ public class UserInfo {
     /** 机器人标识 **/
     private String apiKey;
     /** 用户唯一标识 **/
-    private String userID;
+    private String userId;
 }
